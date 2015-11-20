@@ -85,6 +85,31 @@
     },
     {
       "type": "shell",
+      "inline": [
+          "yum install -y python-devel",
+          "yum install -y epel-release",
+          "yum install -y python-pip",
+          "pip install ansible",
+          "ansible-galaxy install uchida.mock,0.1.0"
+      ]
+    },
+    {
+      "type": "shell",
+      "script": "scripts/ttyless.sh",
+      "environment_vars": ["TTYLESS=ACCEPT"]
+    },
+    {
+      "type": "ansible-local",
+      "playbook_file": "provision.yml",
+      "command": "env ANSIBLE_FORCE_COLOR=1 PYTHONUNBUFFERED=1 ansible-playbook"
+    },
+    {
+      "type": "shell",
+      "script": "scripts/ttyless.sh",
+      "environment_vars": ["TTYLESS=REJECT"]
+    },
+    {
+      "type": "shell",
       "script": "scripts/cleanup.sh"
     }
   ],

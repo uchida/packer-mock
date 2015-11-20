@@ -1,0 +1,10 @@
+---
+- hosts: all
+  roles:
+    - role: uchida.mock
+      mock_config: epel-7-x86_64
+      mock_user: vagrant
+    - role: uchida.mock
+      mock_config: epel-6-x86_64
+      mock_user: vagrant
+
