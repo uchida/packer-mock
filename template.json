@@ -90,7 +90,7 @@
           "yum install -y epel-release",
           "yum install -y python-pip",
           "pip install ansible",
-          "ansible-galaxy install uchida.mock,0.1.0"
+          "ansible-galaxy install uchida.mock,0.1.1"
       ]
     },
     {
