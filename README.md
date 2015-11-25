@@ -1,17 +1,23 @@
-# packer-centos
+# packer-mock
 
-[![Build Status](https://img.shields.io/travis/uchida/packer-centos.svg)](https://travis-ci.org/uchida/packer-centos)
-[![License](https://img.shields.io/github/license/uchida/packer-centos.svg)](http://creativecommons.org/publicdomain/zero/1.0/deed)
+[![Build Status](https://img.shields.io/travis/uchida/packer-mock.svg)](https://travis-ci.org/uchida/packer-mock)
+[![License](https://img.shields.io/github/license/uchida/packer-mock.svg)](http://creativecommons.org/publicdomain/zero/1.0/deed)
 
-packer template to build CentOS images
+packer template for building mock, clean room package builder for RedHat Enterprise Linux derivative distributions,
+
+vagrant images are available at [uchida/mock](https://atlas.hashicorp.com/uchida/boxes/mock)
+
+```
+vagrant init uchida/mock; vagrant up
+```
 
 ## Building Images
 
 To build images, simply run:
 
 ```
-$ git clone https://github.com/uchida/packer-centos
-$ cd packer-centos
+$ git clone https://github.com/uchida/packer-mock
+$ cd packer-mock
 $ packer build template.json
 ```
 
@@ -59,5 +65,5 @@ setup instructions are the following:
 [![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png "CC0")]
 (http://creativecommons.org/publicdomain/zero/1.0/deed)
 
-dedicated to public domain by [contributors](https://github.com/uchida/packer-centos/graphs/contributors).
+dedicated to public domain
 
