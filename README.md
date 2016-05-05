@@ -1,8 +1,8 @@
 # packer-mock
 
-![Version](https://img.shields.io/github/tag/uchida/packer-mock.svg)
-[![License](https://img.shields.io/github/license/uchida/packer-mock.svg)](https://tldrlegal.com/license/creative-commons-cc0-1.0-universal)
-[![CircleCI](https://img.shields.io/circleci/project/uchida/packer-mock.svg)](https://circleci.com/gh/uchida/packer-mock)
+![Version](https://img.shields.io/github/tag/uchida/packer-mock.svg?maxAge=2592000)
+[![License](https://img.shields.io/github/license/uchida/packer-mock.svg?maxAge=2592000)](https://tldrlegal.com/license/creative-commons-cc0-1.0-universal)
+[![CircleCI](https://img.shields.io/circleci/project/uchida/packer-mock.svg?maxAge=2592000)](https://circleci.com/gh/uchida/packer-mock)
 
 packer template for building mock, clean room package builder for RedHat Enterprise Linux derivative distributions,
 
