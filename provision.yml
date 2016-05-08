@@ -1,5 +1,6 @@
 ---
 - hosts: all
+  become_method: su
   roles:
     - role: uchida.mock
       mock_config: epel-7-x86_64
