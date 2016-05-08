@@ -1,6 +1,7 @@
 #!/bin/bash
 set -ex
-useradd vagrant -g wheel
+useradd vagrant || :
+usermod -g wheel vagrant
 echo "vagrant" | passwd --stdin vagrant
 cat <<EOF > /etc/sudoers.d/vagrant
 vagrant ALL=(ALL) NOPASSWD: ALL
